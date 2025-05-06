@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가위,바위,보 게임</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>가위바위보 게임</h1>
+    <form action="/play" method="post">
+      <label
+        ><input type="radio" name="choice" value="가위" required /> 가위</label
+      ><br />
+      <label><input type="radio" name="choice" value="바위" /> 바위</label
+      ><br />
+      <label><input type="radio" name="choice" value="보" /> 보</label><br />
+      <button type="submit">승부!</button>
+    </form>
+  </body>
+</html>
